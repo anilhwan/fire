@@ -9,17 +9,15 @@
 	<meta name='Keywords' content='소방청,정보공개,민원,기관소개,제안'>
 	<meta name='Description' content='소방청'>
 	<meta name='Robots' content='index,follow'>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel='stylesheet' href='css/reset.css'>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src='js/lib/jquery-1.12.4.min.js'></script>
-	<script src='js/lib/jquery.easing.1.3.js'></script>
-	<script src='js/lib/prefixfree.min.js'></script>
-	<script src='js/lib/modernizr-custom.js'></script>
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<script src='js/jquery-1.12.4.min.js'></script>
+	<script src="js/script.js" defer></script>
 	<!--[if (lte IE 8)]>
 		<script src='js/lib/html5shiv.min.js'></script>
 		<link rel='stylesheet' href='css/style8.css'>
@@ -308,20 +306,24 @@
 			<div class="banner">
 				<div class="img-zip">
 					<ul>
-						<li><img src="img/bannerimg1.jpg" alt="배너이미지1"></li>
-						<li><img src="img/bannerimg2.jpg" alt="배너이미지2"></li>
-						<li><img src="img/bannerimg3.jpg" alt="배너이미지3"></li>
+						<li class="bslide1"><a href="#" class="ir_pm">배너이미지1</a></li>
+						<li class="bslide2"><a href="#" class="ir_pm">배너이미지2</a>
+							<span class="img-txt">국민의 생명을 지키는 것이 <br> <span class="yellow-txt"> 소방의 소명입니다</span><br><span class="small-txt">안전하고 행복한 대한민국을 위해 24시간 깨어 있겠습니다</span></span>
+						</li>
+						<li class="bslide3"><a href="#" class="ir_pm">배너이미지3</a>
+							<span class="img-txt">국민의 생명을 지키는 것이 <br><span class="yellow-txt"> 소방의 소명입니다</span><br><span class="small-txt">안전하고 행복한 대한민국을 위해 24시간 깨어 있겠습니다</span></span>
+						</li>
 					</ul>
+					<button type="button" class="btn_prev ir_pm" title="이전">이전</button>
+					<button type="button" class="btn_next ir_pm" title="다음">다음</button>
+					<div class="banner-imgbtn">
+						<a href="#" class="btnone on ir_pm" title="1번이미지">1</a>
+						<a href="#" class="btnone ir_pm" title="2번이미지">2</a>
+						<a href="#" class="btnone ir_pm" title="3번이미지">3</a>
+						<button type="button" class="btnstop ir_pm" title="정지">재생</button>
+					</div>
 				</div>
-				<a href="#" class="btn_prev ir_pm" title="이전">이전</a>
-				<a href="#" class="btn_next ir_pm" title="다음">다음</a>
-				<div class="banner-imgbtn">
-					<a href="#" class="btnone on ir_pm" title="1번이미지">1</a>
-					<a href="#" class="btnone ir_pm" title="2번이미지">2</a>
-					<a href="#" class="btnone ir_pm" title="3번이미지">3</a>
-					<a href="#" class="btnstop ir_pm" title="정지">재생</a>
-					<a href="#" class="btnplay ir_pm" title="재생">정지</a>
-				</div>
+				
 				<div class="banner-content">
 					<span><a href="sotong.html" title="전국119일일활동상황" class="ico1">전국119일일활동상황</a></span>
 					<span><a href="#" class="ico2" title="소방장비정보">소방장비정보</a></span>
