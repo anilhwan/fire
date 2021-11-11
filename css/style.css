@@ -112,8 +112,10 @@ button{cursor: pointer;}
 .content>.notice-img>.control>.prev{background: url(../img/noticebtn_prev.png) no-repeat;}
 .content>.notice-img>.control>.next{background: url(../img/noticebtn_next.png) no-repeat;}
 .content>.notice-img>.control>.stop{background: url(../img/noticebtn_stop.png) no-repeat;}
-/* .content>.noticeimg>.control>.play{background: url(../img/noticebtn_play.png) no-repeat;} */
-.content>.notice-img>.notice-pic{height: 290px; overflow: hidden;float: left;}
+.content>.notice-img>.control .play{background: url(../img/noticebtn_play.png) no-repeat;}
+.content>.notice-img>.notice-pic{height: 290px; overflow: hidden;position: relative; width: 100%;}
+.content>.notice-img>.notice-pic>li{position: absolute;top: 0;left: 100%;}
+.content>.notice-img>.notice-pic>li:first-child{left: 0;}
 /* 아래로버튼 */
 .content>#down-btn{background: url(../img/down.png)no-repeat; width: 86px;height: 50px; position: absolute;left: 50%;transform: translateX(-50%); bottom: 0px; cursor: pointer;}
 /* news */

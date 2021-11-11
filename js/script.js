@@ -4,7 +4,6 @@ var button = $(".banner-imgbtn>a");
 function move(a,b,c){
     a.css({left:b,opacity:0}).stop().animate({left:c,opacity:1})
 }
-
 time();
 function time(){
     setIntervalId=setInterval(function(){
@@ -57,4 +56,49 @@ $('.btnstop').click(function(){
     $(this).toggleClass('play');
 });
 
+var current1=0;
+var slideNotice = $('.notice-pic li');
+
+function move1(a,b,c){
+    a.css({left:b}).css({left:c})
+}
+timer();
+function timer(){
+    setIntervalId1=setInterval(function(){
+    var prev = slideNotice.eq(current1);
+    move1(prev,0,'-110%');
+    current1++;
+    if (current1==slideNotice.size()) {current1=0;}
+    var next = slideNotice.eq(current1);
+    move1(next,'100%',0);
+},1000)};
+
+var nextBtn1 = $('.next');
+var prevBtn1 = $('.prev');
+nextBtn1.on('click',function(){
+    var prev2=slideNotice.eq(current1);
+    current1++;
+    move1(prev2,0,'-110%');
+    if (current1==slideNotice.size()) {current1=0;}
+    var next2 =slideNotice.eq(current1);
+    move1(next2,'100%',0);
+});
+prevBtn1.on('click',function(){
+    var prev3=slideNotice.eq(current1);
+    current1--;
+    move1(prev3,0,'100%');
+    if (current1==-slideNotice.size()) {current1=0;}
+    var next3 =slideNotice.eq(current1);
+    move1(next3,'-110%',0);
+});
+
+$('.notice-img').hover(function(){
+    clearInterval(setIntervalId1);
+},function(){
+    timer();
+});
+
+$('.stop').click(function(){
+    $(this).toggleClass('play')
+})
 

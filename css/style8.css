@@ -77,13 +77,13 @@ li.insta>a:before{content: '\f16d';}
 .yellow-txt{color: #ffd300;line-height: 60px;top: 0;display:inline-block;letter-spacing: -1px;font-weight: 600;text-shadow: 2px 2px #525966;}
 .small-txt{display: inline-block;font-size: 20px;margin-top: 20x;font-weight: lighter;letter-spacing: -1px;}
 button{cursor: pointer;}
-.banner .btn_prev{background-image: url(../img/btn_prev.png); background-repeat: no-repeat;width: 20px; height: 39px; position: absolute; top: 50%;transform: translateY(-50%); left:20px; background-color: none;}
-.banner .btn_next{background-image: url(../img/btn_next.png); background-repeat: no-repeat;width: 20px; height: 39px; position: absolute; top: 50%; transform: translateY(-50%); right:20px; background-color: none;}
+.banner .btn_prev{background-image: url(../img/btn_prev.png); background-repeat: no-repeat;width: 20px; height: 39px; position: absolute; top: 50%;transform: translateY(-50%); left:20px; background-color: #000;}
+.banner .btn_next{background-image: url(../img/btn_next.png); background-repeat: no-repeat;width: 20px; height: 39px; position: absolute; top: 50%; transform: translateY(-50%); right:20px; background-color: #000;}
 .banner .banner-imgbtn{width: 100%; position: absolute; bottom:110px; left:0;height: 20px; text-align: center;}
 .banner .banner-imgbtn .btnone{border: 3px solid #fff;border-radius: 50%;overflow: hidden; display: inline-block; width: 13px;height: 13px;line-height: 13px;margin: 0 5px;vertical-align: middle;}
 .banner .banner-imgbtn .on{border:2px solid #333; background-color: #fff;}
-.banner .banner-imgbtn .btnstop{background: url(../img/btnstop.png)no-repeat; width: 18px;height: 18px;display: inline-block;border-radius: 50%; vertical-align: middle;}
-.banner .banner-imgbtn .play{background: url(../img/btnplay.png)no-repeat; width: 18px;height: 18px;display: inline-block;border-radius: 50%; vertical-align: middle;}/* .banner .bannerimgbtn .btnstop{background-image: url(../img/btnplay.png); background-repeat: no-repeat; width: 18px;height: 18px;display: inline-block;border-radius: 50%; vertical-align: middle;} */
+.banner .banner-imgbtn .btnstop{background-image: url(../img/btnstop.png);background-repeat: no-repeat; width: 18px;height: 18px;display: inline-block;border-radius: 50%; vertical-align: middle; background-color: #000;}
+.banner .banner-imgbtn .play{background-image: url(../img/btnplay.png);background-repeat: no-repeat; width: 18px;height: 18px;display: inline-block;border-radius: 50%; vertical-align: middle;}
 .banner .banner-content{width: 1400px; height: 100px;background: url(../img/bannerconbg.png); position: absolute;bottom:0; left:250px;}
 /* 배너 메뉴 */
 .banner-content span a{color: #ffd300; font-size: 16px; display: inline-block; margin: 10px 0 0 0; text-align: center; padding: 53px 10px 0 12px; letter-spacing: -1px; font-weight: 500;font-weight: 500; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; filter: alpha(opacity=70);}
@@ -115,7 +115,7 @@ button{cursor: pointer;}
 .content>.notice-img>.control>.prev{background-image: url(../img/noticebtn_prev.png);background-repeat: no-repeat;}
 .content>.notice-img>.control>.next{background-image: url(../img/noticebtn_next.png);background-repeat: no-repeat;}
 .content>.notice-img>.control>.stop{background-image: url(../img/noticebtn_stop.png);background-repeat: no-repeat;}
-/* .content>.noticeimg>.control>.play{background: url(../img/noticebtn_play.png) no-repeat;} */
+.content>.notice-img>.control .play{background: url(../img/noticebtn_play.png) no-repeat;}
 .content>.notice-img>.noticepic{position: relative;height: 290px; overflow: hidden;}
 /* 아래로버튼 */
 .content>#down-btn{background-image: url(../img/down.png);background-repeat: no-repeat; width: 86px;height: 50px; position: absolute;left: 50%;transform: translateX(-50%); bottom: 0px; cursor: pointer;}
