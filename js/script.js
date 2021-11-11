@@ -71,7 +71,7 @@ function timer(){
     if (current1==slideNotice.size()) {current1=0;}
     var next = slideNotice.eq(current1);
     move1(next,'100%',0);
-},1000)};
+},5000)};
 
 var nextBtn1 = $('.next');
 var prevBtn1 = $('.prev');
@@ -118,7 +118,7 @@ function timer1(){
     if (current2==slideImg.size()) {current2=0;}
     var next = slideImg.eq(current2);
     move2(next,'100%',0);
-},1000)};
+},5000)};
 
 var nextBtn2 = $('.control>.next');
 var prevBtn1 = $('.control>.prev');
