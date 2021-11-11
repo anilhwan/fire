@@ -1,6 +1,7 @@
 var current = 0;
 var slide = $('.img-zip ul li');
 var button = $(".banner-imgbtn>a");
+// 메인배너 이미지슬라이더
 function move(a,b,c){
     a.css({left:b,opacity:0}).stop().animate({left:c,opacity:1})
 }
@@ -56,6 +57,7 @@ $('.btnstop').click(function(){
     $(this).toggleClass('play');
 });
 
+// 공모전홍보 이미지 슬라이더
 var current1=0;
 var slideNotice = $('.notice-pic li');
 
@@ -102,7 +104,7 @@ $('.stop').click(function(){
     $(this).toggleClass('play')
 })
 
-
+// 알림판 이미지 슬라이더
 var current2=0;
 var slideImg = $('.img-slider li');
 
