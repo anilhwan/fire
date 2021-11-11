@@ -153,6 +153,3 @@ $('.control>.stop').click(function(){
 
 
 
-$('a').click(function(){
-    return false;
-})
