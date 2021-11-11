@@ -102,3 +102,49 @@ $('.stop').click(function(){
     $(this).toggleClass('play')
 })
 
+
+var current2=0;
+var slideImg = $('.img-slider li');
+
+function move2(a,b,c){
+    a.css({left:b}).css({left:c})
+}
+timer1();
+function timer1(){
+    setIntervalId2=setInterval(function(){
+    var prev = slideImg.eq(current2);
+    move2(prev,0,'-100%');
+    current2++;
+    if (current2==slideImg.size()) {current2=0;}
+    var next = slideImg.eq(current2);
+    move2(next,'100%',0);
+},1000)};
+
+var nextBtn2 = $('.control>.next');
+var prevBtn1 = $('.control>.prev');
+nextBtn2.on('click',function(){
+    var prev2=slideImg.eq(current2);
+    current2++;
+    move2(prev2,0,'-100%');
+    if (current2==slideImg.size()) {current2=0;}
+    var next2 =slideImg.eq(current2);
+    move2(next2,'100%',0);
+});
+prevBtn1.on('click',function(){
+    var prev3=slideImg.eq(current2);
+    current2--;
+    move1(prev3,0,'100%');
+    if (current2==-slideImg.size()) {current2=0;}
+    var next3 =slideImg.eq(current2);
+    move1(next3,'-100%',0);
+});
+
+$('.news-img').hover(function(){
+    clearInterval(setIntervalId2);
+},function(){
+    timer1();
+});
+
+$('.control>.stop').click(function(){
+    $(this).toggleClass('start')
+})
