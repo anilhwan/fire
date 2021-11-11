@@ -148,3 +148,9 @@ $('.news-img').hover(function(){
 $('.control>.stop').click(function(){
     $(this).toggleClass('start')
 })
+
+
+
+$('a').click(function(){
+    return false;
+})
